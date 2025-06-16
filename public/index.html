@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Checklist Online</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Minha Lista de Tarefas</h1>
+        </header>
+
+        <section class="task-input">
+            <input type="text" id="newTaskInput" placeholder="Adicionar nova tarefa...">
+            <button id="addTaskBtn">Adicionar</button>
+        </section>
+
+        <section class="task-lists">
+            <div class="pending-tasks-section">
+                <h2>Pendentes (<span id="pendingTasksCount">0</span>)</h2>
+                <ul id="pendingTasksList" class="task-list" data-status="pending">
+                    </ul>
+            </div>
+
+            <div class="completed-tasks-section">
+                <h2>Resolvidas (<span id="completedTasksCount">0</span>)</h2>
+                <ul id="completedTasksList" class="task-list" data-status="completed">
+                    </ul>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

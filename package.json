@@ -1,0 +1,16 @@
+{
+  "name": "checklist-app",
+  "version": "1.0.0",
+  "description": "Certifique-se de ter o MySQL em execução.\r Criar o banco de dados e a tabela:\r Navegue até a pasta checklist-app/ no terminal.\r Execute o script SQL: mysql -u seu_usuario -p < database/schema.sql (substitua seu_usuario e sua_senha).\r Instale as dependências do Node.js:\r No terminal, na pasta checklist-app/, execute: npm install\r Configure as credenciais do banco de dados:\r Edite src/config/db.js com suas credenciais do MySQL.\r Inicie o servidor Node.js:\r No terminal, na pasta checklist-app/, execute: node src/app.js\r Você deverá ver a mensagem: Servidor rodando em http://localhost:3000\r Abra o aplicativo no navegador:\r Abra seu navegador e acesse http://localhost:3000.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0",
+    "mysql2": "^3.14.1"
+  }
+}
