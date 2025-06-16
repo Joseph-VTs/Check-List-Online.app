@@ -1,3 +1,24 @@
+// Define o URL base da API
+// Em desenvolvimento, pode ser 'http://localhost:3000'
+// Em produção no Vercel, será o URL do seu deployment de back-end
+const API_BASE_URL = window.location.hostname === 'localhost' ? 'http://localhost:3000' : 'https://checklist-online-app.vercel.app/';
+
+// ... dentro de fetchTasks() e outras funções ...
+async function fetchTasks() {
+    try {
+        const response = await fetch(`${API_BASE_URL}/api/tasks`); // Use API_BASE_URL
+        // ...
+    } catch (error) {
+        // ...
+    }
+}
+
+// ... dentro de addTaskBtn.addEventListener ...
+const response = await fetch(`${API_BASE_URL}/api/tasks`, { // Use API_BASE_URL
+// ...
+});
+
+
 document.addEventListener('DOMContentLoaded', () => {
     const newTaskInput = document.getElementById('newTaskInput');
     const addTaskBtn = document.getElementById('addTaskBtn');
